@@ -7,7 +7,7 @@ import { ThemeToggle } from "./theme-toogle"
 import { Rocket, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
-
+import Image from "next/image"
 const navItems = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
@@ -52,7 +52,8 @@ export function Navbar() {
     >
       <div className="container flex items-center justify-between">
         <Link href="#" className="flex items-center gap-3">
-          <Rocket className="h-7 w-7 text-vibrantBlue group-hover:rotate-12 transition-transform duration-300" />
+          {/* <Rocket className="h-7 w-7 text-vibrantBlue group-hover:rotate-12 transition-transform duration-300" /> */}
+          <Image src="/images/events/logo.png" alt="Logo" width={32} height={32}></Image>
           <span className="text-2xl font-bold bg-gradient-to-r from-vibrantBlue to-warmOrange bg-clip-text text-transparent">
             GrowInCommunity
           </span>

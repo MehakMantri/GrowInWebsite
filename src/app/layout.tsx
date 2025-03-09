@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Modern Design Tool Landing Page",
-    description: "Created with the help of Frontend Tribe",
+    title: "GrowIn Community",
+    description: "GrowIn Community is a community of developers, designers, and entrepreneurs who are passionate about building and growing their skills.",
 };
 
 export default function RootLayout({

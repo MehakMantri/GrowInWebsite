@@ -71,7 +71,7 @@ export function HeroSection() {
             <motion.span
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="absolute -right-12 top-0"
+              className="absolute -right-20 top-5"
             >
               🚀
             </motion.span>
