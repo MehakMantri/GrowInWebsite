@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GrowInCommunity Website Building Competition 2025 - Submission
+
+### Description
+This project is my submission for the GrowInCommunity Website Building Competition 2025. It is built using **Next.js with TypeScript** to ensure a robust, scalable, and high-performance web experience.
+
+### Features
+- Responsive and user-friendly UI
+- Optimized for performance and SEO
+- Interactive animations and smooth transitions
+- Fully functional components with Next.js and TypeScript
+- Dark mode support 
+
+### Tech Stack
+- **Framework:** Next.js (14+)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS / CSS Modules / Shadcn UI
+- **Deployment:** 
 
 ## Getting Started
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (LTS recommended)
+- npm or yarn
 
-First, run the development server:
-
+### Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/[your-username]/[your-repo-name].git
+
+# Navigate to the project folder
+cd [your-repo-name]
+
+# Install dependencies
+npm install  # or yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Project
+```bash
+# Start the development server
+npm run dev  # or yarn dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
+```bash
+npm run build  # or yarn build
+npm start  # Start the production server
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+This project is deployed on **[Vercel]**.
+To deploy manually:
+```bash
+git push origin main  # Push latest changes
+```
 
-## Learn More
+## Submission Guidelines
+- The complete code is hosted on GitHub.
+- The repository contains:
+  - A detailed **README.md** (this file)
+  - A **`package.json`** with all dependencies
+  - A **public and src directory** with all assets and source code
+  
+## Social Media Sharing
+As part of the competition, I have shared my submission on:
+- **X (Twitter):** 
+- **LinkedIn:**
+- 
+## Acknowledgments
+- Thanks to **GrowInCommunity** for organizing this amazing competition!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📢 **Give a Star!** ⭐
+If you find this project useful, don't forget to give it a **star** on GitHub!
