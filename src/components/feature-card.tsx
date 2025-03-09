@@ -27,7 +27,7 @@ export function FeatureCard({ icon, title, description, index = 0 }: FeatureCard
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="h-full relative"
+      className="h-full relative group hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out"
     >
       {/* Icon positioned absolutely between cards */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20">
@@ -40,7 +40,7 @@ export function FeatureCard({ icon, title, description, index = 0 }: FeatureCard
             "relative h-full rounded-full bg-gradient-to-br p-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg flex items-center justify-center",
             iconColors
           )}>
-            <Icon className="h-8 w-8 text-white transition-transform duration-300 group-hover:rotate-[-8deg]" />
+            <Icon className="h-8 w-8 text-white transition-transform duration-500 group-hover:rotate-12" />
           </div>
         </div>
       </div>
