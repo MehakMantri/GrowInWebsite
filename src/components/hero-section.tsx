@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Sparkles, Users } from "lucide-react"
 import { FeatureCard } from "./feature-card"
 import { motion } from "framer-motion"
-
+import Link from "next/link"
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null)
 
@@ -96,9 +96,9 @@ export function HeroSection() {
           className="mt-8 flex gap-8 items-center justify-center text-center"
         >
           {[
-            { number: "5000+", label: "Members" },
-            { number: "200+", label: "Events" },
-            { number: "50+", label: "Mentors" },
+            { number: "1400+", label: "Members" },
+            { number: "50+", label: "Events" },
+            { number: "20+", label: "Mentors" },
           ].map((stat) => (
             <div key={stat.label} className="px-4 border-r last:border-0 border-gray-700/50">
               <div className="text-2xl font-bold text-vibrantBlue">{stat.number}</div>
@@ -113,16 +113,19 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-10 flex flex-col gap-4 sm:flex-row"
         >
+          <Link href="https://discord.com/invite/DrkxHqTTaN">
           <Button 
             size="lg" 
             className="group relative overflow-hidden bg-gradient-to-r from-vibrantBlue to-warmOrange hover:opacity-90 transition-opacity"
           >
+            
             <span className="relative z-10 flex items-center">
               Join the Community
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
+            
             <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Button>
+          </Button></Link>
 
           <Button
             size="lg"

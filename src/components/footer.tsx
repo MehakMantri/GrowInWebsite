@@ -1,8 +1,35 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Rocket, Twitter, DiscIcon as Discord } from "lucide-react"
+import { useState } from "react"
+
+const SOCIAL_LINKS = {
+  twitter: "https://twitter.com/growincommunity",
+  discord: "https://discord.com/invite/DrkxHqTTaN",
+  github: "https://github.com/growincommunity"
+} as const
 
 export function Footer() {
+  const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setStatus("loading")
+    
+    try {
+      // Add your newsletter subscription logic here
+      await fetch("/api/subscribe", {
+        method: "POST",
+        body: JSON.stringify({ email }),
+      })
+      setStatus("success")
+      setEmail("")
+    } catch (error) {
+      setStatus("error")
+    }
+  }
+
   return (
     <footer className="border-t border-gray-700/50 bg-gray-900/50 py-12">
       <div className="container">
@@ -17,15 +44,31 @@ export function Footer() {
               together.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+              <Link 
+                href={SOCIAL_LINKS.twitter}
+                className="text-gray-400 hover:text-vibrantBlue transition-colors transform hover:scale-110"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Twitter"
+              >
                 <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+              <Link 
+                href={SOCIAL_LINKS.discord}
+                className="text-gray-400 hover:text-vibrantBlue transition-colors transform hover:scale-110"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Join our Discord server"
+              >
                 <Discord className="h-5 w-5" />
-                <span className="sr-only">Discord</span>
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+              <Link 
+                href={SOCIAL_LINKS.github}
+                className="text-gray-400 hover:text-vibrantBlue transition-colors transform hover:scale-110"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our GitHub"
+              >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -33,7 +76,6 @@ export function Footer() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="sr-only">GitHub</span>
               </Link>
             </div>
           </div>
@@ -95,15 +137,34 @@ export function Footer() {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter to get the latest updates on events and resources.
             </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex h-10 w-full rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-vibrantBlue focus:border-transparent"
-              />
-              <Button type="submit" size="sm" className="bg-vibrantBlue hover:bg-vibrantBlue/90">
-                Subscribe
-              </Button>
+            <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex h-10 w-full rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2 text-sm 
+                    placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-vibrantBlue focus:border-transparent
+                    disabled:opacity-50"
+                  disabled={status === "loading"}
+                  required
+                />
+                <Button 
+                  type="submit" 
+                  size="sm" 
+                  className="bg-vibrantBlue hover:bg-vibrantBlue/90 disabled:opacity-50"
+                  disabled={status === "loading"}
+                >
+                  {status === "loading" ? "..." : "Subscribe"}
+                </Button>
+              </div>
+              {status === "success" && (
+                <p className="text-green-500 text-sm">Thanks for subscribing!</p>
+              )}
+              {status === "error" && (
+                <p className="text-red-500 text-sm">Something went wrong. Please try again.</p>
+              )}
             </form>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ValueCard } from "./value-card"
-
+import Link from "next/link"
 export function AboutSection() {
   return (
     <section 
@@ -80,6 +80,11 @@ export function AboutSection() {
 
         <div className="flex justify-center">
           <a href="/about" className="inline-block">
+          <Link 
+            href="https://discord.com/invite/DrkxHqTTaN" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <Button 
               variant="outline" 
               size="lg" 
@@ -90,6 +95,7 @@ export function AboutSection() {
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-vibrantBlue/10 to-warmOrange/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Button>
+            </Link>
           </a>
         </div>
       </div>

@@ -12,7 +12,7 @@ const navItems = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
   { name: "Events", href: "#events" },
-  { name: "Resources", href: "#" },
+  
 ]
 
 export function Navbar() {
@@ -84,18 +84,20 @@ export function Navbar() {
           <ThemeToggle />
 
           <div className="hidden sm:flex items-center gap-3">
-          <Button 
+          {/* <Button 
   variant="outline" 
   className="border-gray-700/50 border-vibrantBlue text-vibrantBlue hover:bg-indigo-100/90 hover:text-deepBlue transition-all duration-300 text-base
     dark:bg-transparent dark:text-white
     light:bg-indigo-50/90 light:text-vibrantBlue light:bg-indigo-100/90"
 >
   Sign In
-</Button>
+</Button> */}
             <Button 
               className="bg-gradient-to-r from-vibrantBlue to-warmOrange hover:opacity-90 transition-opacity duration-300 text-base"
-            >
+            ><Link 
+                href="https://discord.com/invite/DrkxHqTTaN">
               Join Us
+              </Link>
             </Button>
           </div>
 
