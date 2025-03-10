@@ -2,7 +2,31 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ValueCard } from "./value-card"
 import Link from "next/link"
+import { ValueCardProps } from "./value-card"
 export function AboutSection() {
+  const values: ValueCardProps[] = [
+    {
+      icon: "lightbulb",
+      title: "Learning",
+      description: "Continuous learning through workshops, tutorials, and resources shared by community members"
+    },
+    {
+      icon: "users",
+      title: "Collaboration",
+      description: "Working together on projects, sharing ideas, and building solutions as a community"
+    },
+    {
+      icon: "rocket",
+      title: "Growth",
+      description: "Personal and professional development through mentorship and skill-building opportunities"
+    },
+    {
+      icon: "message-square",
+      title: "Inclusivity",
+      description: "Creating a welcoming space for everyone regardless of background or experience level"
+    }
+  ];
+  
   return (
     <section 
       id="about" 
@@ -42,28 +66,7 @@ export function AboutSection() {
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mb-16">
-          {[
-            {
-              icon: "lightbulb",
-              title: "Learning",
-              description: "Continuous learning through workshops, tutorials, and resources shared by community members"
-            },
-            {
-              icon: "users",
-              title: "Collaboration",
-              description: "Working together on projects, sharing ideas, and building solutions as a community"
-            },
-            {
-              icon: "rocket",
-              title: "Growth",
-              description: "Personal and professional development through mentorship and skill-building opportunities"
-            },
-            {
-              icon: "message-square",
-              title: "Inclusivity",
-              description: "Creating a welcoming space for everyone regardless of background or experience level"
-            }
-          ].map((value, index) => (
+        {values.map((value, index) => (
             <div 
               key={value.title} 
               className="transition-all duration-300 ease-out"
@@ -77,6 +80,7 @@ export function AboutSection() {
             </div>
           ))}
         </div>
+
 
         <div className="flex justify-center">
           <a href="/about" className="inline-block">

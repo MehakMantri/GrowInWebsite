@@ -38,7 +38,7 @@ export function HeroSection() {
   return (
     <section ref={heroRef} className="relative overflow-hidden py-20">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('https://unsplash.com/photos/light-decorations-in-dark-area-bZZp1PmHI0E')] bg-cover bg-center opacity-10"></div>
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-vibrantBlue/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-warmOrange/10 rounded-full blur-3xl"></div>
 

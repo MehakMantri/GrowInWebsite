@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Image from "next/image";
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
@@ -10,8 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "GrowIn Community",
+    title: "GrowInCommunity",
     description: "GrowIn Community is a community of developers, designers, and entrepreneurs who are passionate about building and growing their skills.",
+    icons:"/images/events/logo.png",
 };
 
 export default function RootLayout({

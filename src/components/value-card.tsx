@@ -2,7 +2,7 @@ import { Lightbulb, MessageSquare, Rocket, Users } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
 
-interface ValueCardProps {
+export interface ValueCardProps {
   icon: "lightbulb" | "users" | "rocket" | "message-square"
   title: string
   description: string

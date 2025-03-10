@@ -146,17 +146,16 @@ export function EventsSection() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <EventCardComponent
                 type="twitter"
-                date="June 9 - June 30, 2024"
-                title="Blog-A-Thon: Unlocking the Power of Technical Writing"
-                description="Join Showwcase and GrowInCommunity's collaborative initiative to showcase your writing skills and share your technical expertise with a wider audience."
-                buttonText="Join Blog-A-Thon"
-                href="https://www.showwcase.com"
-                tags={["#blogathon", "#showwcase", "#growincommunity"]}
-                image="/images/events/blog.png"
-                category="Writing Challenge"
+                date="Feb 28 - Mar 20, 2025"
+                title=" Website Building Competition"
+                description="Use your skills to build a website for GrowInCommunity and win exciting prizes! "
+                buttonText="Details"
+                href="https://github.com/GrowInCommunity/Growincomm-website-competetion"
+                image="/images/events/website.png"
+                category="Website Building Competition"
               />
 
-              <EventCardComponent
+              {/* <EventCardComponent
                 type="discord"
                 date="November 26 - December 3, 2023"
                 title="KubeCon India 2024 Sponsorship Program"
@@ -165,16 +164,16 @@ export function EventsSection() {
                 href="https://github.com/GrowInCommunity/Kubecon-India-2024-sponsorship/blob/main/README.md"
                 tags={["#kubeconindia2024", "#cncf", "#growincommunity"]}
                 category="Challenge"
-              />
+              /> */}
 
-              <EventCardComponent
+              {/* <EventCardComponent
                 type="discord"
                 date="November 26 - December 3, 2024"
                 title="KubeCon + CloudNativeCon India 2024 Sponsorship Program"
                 description="Win a sponsored ticket to KubeCon India 2024! Write a blog post about 'Importance of Communities' or 'How GrowInCommunity helped your tech career'. Host it on your domain, share on social media, and submit via our Discord channel."
                 isPast={true}
                 buttonText="Learn More"
-              />
+              /> */}
 
               
 
