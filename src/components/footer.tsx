@@ -110,23 +110,23 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Community</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
-                  Discord Server
+                <Link href=" https://discord.gg/m5anDXXFr3 " className="text-gray-400 hover:text-vibrantBlue transition-colors">
+                  Discord
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+                <Link href="https://x.com/GrowInComm" className="text-gray-400 hover:text-vibrantBlue transition-colors">
                   Twitter
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+                <Link href="https://github.com/growincommunity" className="text-gray-400 hover:text-vibrantBlue transition-colors">
                   GitHub
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-vibrantBlue transition-colors">
-                  Code of Conduct
+                <Link href="https://www.linkedin.com/company/growincommunity/" className="text-gray-400 hover:text-vibrantBlue transition-colors">
+                  LinkedIn
                 </Link>
               </li>
             </ul>

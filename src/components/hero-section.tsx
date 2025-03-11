@@ -127,14 +127,17 @@ export function HeroSection() {
             <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </Button></Link>
 
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-gray-700/50 text-vibrantBlue hover:border-vibrantBlue hover:text-deepBlue group"
-          >
-            <Users className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
-            Get Mentorship
-          </Button>
+          <a href="https://www.youtube.com/@GrowInCommunityoutube" target="_blank" rel="noopener noreferrer">
+  <Button
+    size="lg"
+    variant="outline"
+    className="bg-white hover:bg-gray-200 border-gray-700/50 text-vibrantBlue hover:border-vibrantBlue hover:text-deepBlue group flex items-center"
+  >
+    <Users className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+    View on YouTube
+  </Button>
+</a>
+
         </motion.div>
 
         <motion.div

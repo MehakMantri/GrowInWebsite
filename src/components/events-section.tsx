@@ -44,10 +44,8 @@ function EventCard({
       )}
       
       <div className="flex items-center gap-2 mb-4">
-        {/* ... existing content ... */}
+        
       </div>
-      
-      {/* ... rest of the component ... */}
     </div>
   )
 }
@@ -55,7 +53,6 @@ function EventCard({
 export function EventsSection() {
   return (
     <section id="events" className="py-24 relative overflow-hidden">
-      {/* Enhanced background decorations */}
       <motion.div
         initial={{ opacity: 0, skewY: 0 }}
         animate={{ opacity: 1, skewY: -3 }}
@@ -155,16 +152,16 @@ export function EventsSection() {
                 category="Website Building Competition"
               />
 
-              {/* <EventCardComponent
+              <EventCardComponent
                 type="discord"
-                date="November 26 - December 3, 2023"
-                title="KubeCon India 2024 Sponsorship Program"
-                description="Win a sponsored ticket to KubeCon + CloudNativeCon India 2024! Write a blog post about communities or your GrowInCommunity journey."
-                buttonText="Learn More"
-                href="https://github.com/GrowInCommunity/Kubecon-India-2024-sponsorship/blob/main/README.md"
-                tags={["#kubeconindia2024", "#cncf", "#growincommunity"]}
-                category="Challenge"
-              /> */}
+                date="March 20 "
+                title="Community Call"
+                description="Do join our Bi-monthly community calls' session full of brainstorming, learning and collaboration. "
+                buttonText="Details"
+                href="https://x.com/GrowInComm"
+                image="/images/events/calls.png"
+                category="Community Call"
+              />
 
               {/* <EventCardComponent
                 type="discord"
