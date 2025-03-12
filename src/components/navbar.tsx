@@ -143,12 +143,12 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col sm:hidden gap-2 pt-2">
-                <Button 
+                {/* <Button 
                   variant="outline" 
                   className="w-full justify-center text-base dark:bg-transparent dark:text-white light:bg-white light:text-deepBlue"
                 >
                   Sign In
-                </Button>
+                </Button> */}
                 <Button 
                   className="w-full justify-center bg-gradient-to-r from-vibrantBlue to-warmOrange hover:opacity-90 text-base"
                 >
