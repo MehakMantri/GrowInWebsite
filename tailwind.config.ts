@@ -59,6 +59,8 @@ module.exports = {
     			electricBlue: '#5D9CFF',
     			darkGray: '#121212',
     			softWhite: '#EAEAEA',
+				lightBlue: "#38BDF8",
+				coolGreen: "#34D399",
     			chart: {
     				'1': 'hsl(var(--chart-1))',
     				'2': 'hsl(var(--chart-2))',

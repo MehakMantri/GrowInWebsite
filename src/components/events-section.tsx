@@ -143,7 +143,7 @@ export function EventsSection() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <EventCardComponent
                 type="twitter"
-                date="Feb 28 - Mar 20, 2025"
+                date="Feb 28 - Mar 31, 2025"
                 title=" Website Building Competition"
                 description="Use your skills to build a website for GrowInCommunity and win exciting prizes! "
                 buttonText="Details"

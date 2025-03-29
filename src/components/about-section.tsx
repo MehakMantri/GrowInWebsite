@@ -94,7 +94,8 @@ export function AboutSection() {
               size="lg" 
               className="group relative overflow-hidden px-8 py-6 text-lg font-medium shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2"
             >
-              <span className="relative z-10 bg-gradient-to-r from-vibrantBlue to-warmOrange bg-clip-text text-transparent">
+              
+              <span className="relative z-10 bg-gradient-to-r from-vibrantBlue to-warmOrange bg-clip-text text-vibrantBlue dark:coolGreen">
                 Learn More About Our Community
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-vibrantBlue/10 to-warmOrange/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
