@@ -141,6 +141,16 @@ export function EventsSection() {
 
           <TabsContent value="upcoming" className="space-y-10 animate-in fade-in-50 duration-300">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <EventCardComponent
+                type="discord"
+                date="April 23 "
+                title="Community Call"
+                description="Do join our Bi-monthly community calls' session full of brainstorming, learning and collaboration. "
+                buttonText="Details"
+                href="https://x.com/GrowInComm"
+                image="/images/events/calls2.png"
+                category="Community Call"
+              />
               <EventCardComponent
                 type="twitter"
                 date="Feb 28 - Mar 31, 2025"
@@ -154,12 +164,12 @@ export function EventsSection() {
 
               <EventCardComponent
                 type="discord"
-                date="March 20 "
+                date="March 23 "
                 title="Community Call"
                 description="Do join our Bi-monthly community calls' session full of brainstorming, learning and collaboration. "
                 buttonText="Details"
                 href="https://x.com/GrowInComm"
-                image="/images/events/calls.png"
+                image="/images/events/calls2.png"
                 category="Community Call"
               />
 
